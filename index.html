@@ -360,7 +360,7 @@ nav{
 
 <script>
 const clubs = [
-  { name: "Aces Table", formats: ["NLH","PLO4","PLO5"],  formatLabel: "NLH, PLO4 & PLO5", stakeMin:0.25,stakeMax:5, union:"Massiv", clubId: "983 183", referral: "2822-1983", fee: "7%", feeBB: null,
+  { name: "Krusty Krab", formats: ["NLH","PLO4","PLO5"],  formatLabel: "NLH, PLO4 & PLO5", stakeMin:0.25,stakeMax:5, union:"Massiv", clubId: "645 660", referral: "4590-9906", fee: "7%", feeBB: null,
     feeRows: [
       { label: "NLH (7%)",  entries: ["0.05/0.10: 10bb cap","0.10/0.20: 8bb","0.25/0.50: 6bb","0.5/1: 5bb","1/2: 4bb","2/4: 3bb","2.5/5: 3bb","3/6: 3bb","5/10: 2.5bb"] },
       { label: "PLO4 (7%)", entries: ["0.05/0.10: 8bb cap","0.10/0.20: 7bb","0.25/0.50: 6bb","0.5/1: 5bb","1/2: 4bb","2/4: 3bb","2.5/5: 3bb","3/6: 3bb","5/10: 2bb","10/20: 2bb"] },
@@ -417,13 +417,21 @@ const clubs = [
   { name: "Kiwi Strawberry",  formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:1,   stakeMax:1,   clubId: "389 201", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
   { name: "Mississippians",   formats: ["PLO4","PLO5"],               formatLabel: "PLO4 & PLO5",           stakeMin:1,   stakeMax:1,   clubId: "693 951", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
   { name: "OTPokah",          formats: ["NLH","PLO4"],               formatLabel: "NLH & PLO4",            stakeMin:1,   stakeMax:2,   clubId: "237 914", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
-  { name: "OTDriver",         formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:0.5, stakeMax:2.5, clubId: "487 159", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
+  { name: "OTDriver",         formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:0.3, stakeMax:5,   union:"BackTees", clubId: "487 159", referral: "2822-1983", fee: "5–7%", feeBB: null,
+    feeRows: [
+      { label: "NLH + PLO (all stakes)", entries: ["0.30/0.60: 7% / 5BB cap","0.50/1: 7% / 4BB cap","1/2: 7% / 3BB cap","2/4: 6% / 2BB cap","2.50/5: 6.5% / 1.8BB cap","5/10: 5% / 1BB cap"] }
+    ], feeNote: null },
+  { name: "Space Station",    formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:1,   stakeMax:100, union:"Atamans", clubId: "883 894", referral: "4590-9906", fee: "5%", feeBB: null,
+    feeRows: [
+      { label: "NLH & PLO4/5/6 (5%)", entries: ["1/2: 6.5BB","2.5/5: 5BB","5/10: 4BB","10/20: 3BB","25/50: 2BB","50/100: 1.5BB"] },
+      { label: "Heads-Up NLH & PLO4/5/6 (5%, 4% at 25/50+)", entries: ["1/2: 5.5BB","2.5/5: 4BB","5/10: 3BB","10/20: 2BB","25/50: 1.5BB","50/100: 1BB"] }
+    ], feeNote: "Calltime: 15 min (1/2–10/20), 20 min (25/50), 30 min (50/100). HU calltime: 15 min (1/2–10/20), 20 min (25/50+). Buy-In: 50–150BB | MTT reg fee: 7–9%" },
   { name: "CakeMe",           formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:50,  stakeMax:100, clubId: null, referral: null, fee: "TBD", feeBB: null,    feeNote: "Ask for invite" },
 ];
 
 // ── UNION CONFIG ──
-const unionColors = {'Massiv':'#4466cc','Turkish':'#c07000','TMT':'#cc3333','24 Poker':'#2d7a4e'};
-const unionOrder = ['Massiv','Turkish','TMT','24 Poker'];
+const unionColors = {'Massiv':'#4466cc','Turkish':'#c07000','TMT':'#cc3333','24 Poker':'#2d7a4e','BackTees':'#7c3aed','Atamans':'#1a7a9a'};
+const unionOrder = ['Massiv','Turkish','TMT','24 Poker','BackTees','Atamans'];
 
 // ── HELPERS ──
 function stakeRangeLabel(min,max){
