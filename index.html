@@ -360,7 +360,7 @@ nav{
 
 <script>
 const clubs = [
-  { name: "Krusty Krab", formats: ["NLH","PLO4","PLO5"],  formatLabel: "NLH, PLO4 & PLO5", stakeMin:0.25,stakeMax:5, union:"Massiv", clubId: "645 660", referral: "4590-9906", fee: "7%", feeBB: null,
+  { name: "Splash Mountain", formats: ["NLH","PLO4","PLO5"],  formatLabel: "NLH, PLO4 & PLO5", stakeMin:0.25,stakeMax:5, union:"Massiv", clubId: "267 491", referral: "4590-9906", fee: "7%", feeBB: null,
     feeRows: [
       { label: "NLH (7%)",  entries: ["0.05/0.10: 10bb cap","0.10/0.20: 8bb","0.25/0.50: 6bb","0.5/1: 5bb","1/2: 4bb","2/4: 3bb","2.5/5: 3bb","3/6: 3bb","5/10: 2.5bb"] },
       { label: "PLO4 (7%)", entries: ["0.05/0.10: 8bb cap","0.10/0.20: 7bb","0.25/0.50: 6bb","0.5/1: 5bb","1/2: 4bb","2/4: 3bb","2.5/5: 3bb","3/6: 3bb","5/10: 2bb","10/20: 2bb"] },
@@ -371,8 +371,8 @@ const clubs = [
       { label: "NLH (6%)", entries: ["0.25/0.50: 6% up to 6bb (8bb max)","0.5/1: 6% up to 5bb (8bb max)","1/2: 6% up to 4bb (7max)","2.5/5: 6% up to 2.5bb (6bb max)","5/10: 6% up to 2bb (6bb max)"] },
       { label: "PLO4 (6%)", entries: ["1/2: 6% up to 3.5bb","2/4: 6% up to 3bb","3/6: 6% up to 2.5bb","5/10: 6% up to 2bb"] }
     ], feeNote: null },
-  { name: "Buzzer Beater",    formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:2.5, stakeMax:5,   clubId: "249 782", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "Club CVP",         formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:0.25,stakeMax:5,   clubId: "669 122", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
+  
+  { name: "Club CVP",         formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:0.25,stakeMax:5,   clubId: "669 122", referral: "4590-9906", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
   { name: "Croatian Airlines", formats: ["NLH","PLO4","PLO5"], formatLabel: "NLH, PLO4 & PLO5", stakeMin:2, stakeMax:25, union:"Turkish", clubId: "741 643", referral: "4590-9906", fee: "5%", feeBB: null,
     feeRows: [
       { label: "NLH / PLO 4-5-6 (5%)", entries: ["1/2: cap 10bb","2.5/5: cap 5bb","5/10: cap 5bb","10/20: cap 3bb","15/30: cap 2bb","25/50: cap 2bb"] },
@@ -394,32 +394,32 @@ const clubs = [
       { label: "NLH (8%)", entries: ["All stakes: 3BB cap"] },
       { label: "PLO (8%)", entries: ["All stakes: 2.5BB cap"] }
     ], feeNote: null },
-  { name: "Donkey Land",      formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:5,   stakeMax:5,   clubId: "979 231", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "Donk Dynasty",     formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:10,  stakeMax:10,  clubId: "511 678", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "GOAT Card Room",   formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:2,   stakeMax:25,  clubId: "912 207", referral: "4590-9906", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "GoatDong",         formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:10,  stakeMax:10,  clubId: "923 700", referral: "9944-7971", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "God of Gamble",    formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:15,  stakeMax:15,  clubId: "197 360", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "Houstons Private", formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:5,   stakeMax:25,  clubId: null, referral: null, fee: "TBD", feeBB: null,    feeNote: "Ask for invite" },
-  { name: "Js Private Game",  formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:10,  stakeMax:10,  clubId: "595 694", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "Kittens Club",     formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:2,   stakeMax:10,  clubId: "239 047", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "Lucky Unicorns",   formats: ["PLO5"],                     formatLabel: "PLO5",                  stakeMin:5,   stakeMax:15,  clubId: "506 905", referral: "4590-9906",  fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
+  { name: "Donkey Land",      formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:5,   stakeMax:5,   clubId: "979 231", referral: "4590-9906", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
+  
+  
+  
+  
+  
+  
+  
+  
   { name: "Mind Over Money",  formats: ["NLH","PLO4","PLO5","Squid"], formatLabel: "NLH, PLO4, PLO5 & Squid", stakeMin:15,  stakeMax:25, clubId: "353 369", referral: "9944-7971", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "Paper Straw",      formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:5,   stakeMax:5,   clubId: "430 078", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "Pitt Poker Club",  formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:5,   stakeMax:5,   clubId: "893 100", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
+  
+  
   { name: "Safehouse",        formats: ["PLO4","PLO5","Squid"],      formatLabel: "PLO4, PLO5 & Squid",    stakeMin:2,   stakeMax:5,   clubId: null, referral: null, fee: "TBD", feeBB: null,    feeNote: "Ask for invite" },
   { name: "Bathhouse", formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:2.5, stakeMax:10, union:"24 Poker", clubId: "623 790", referral: "4590-9906", fee: "10%", feeBB: "2.3bb", feeNote: "Capped per pot" },
-  { name: "Spectre",          formats: ["NLH","Squid"],              formatLabel: "NLH & Squid",           stakeMin:1,   stakeMax:1,   clubId: "965 367", referral: "4590-9906", fee: "6%", feeBB: null,
-    feeRows: [
-      { label: "NLH (6%)", entries: ["1/2: 6% up to 4bb (7max)"] }
-    ], feeNote: null },
+  
   { name: "Splashies",        formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:50,  stakeMax:100, clubId: null, referral: null, fee: "TBD", feeBB: null,    feeNote: "Ask for invite" },
   { name: "VANs",             formats: ["NLH","PLO4","PLO5","Squid"], formatLabel: "NLH, PLO4, PLO5 & Squid", stakeMin:3,   stakeMax:10, clubId: "273 007", referral: "4590-9906", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
   { name: "Whale Fall TX",    formats: ["PLO4"],                     formatLabel: "PLO4",                  stakeMin:2,   stakeMax:2,   clubId: "519 365", referral: "2822-1983", fee: "TBD", feeBB: null,    feeNote: "Fee info coming soon" },
-  { name: "StraddleUp",      formats: ["NLH","PLO4"],               formatLabel: "NLH & PLO4",            stakeMin:2.5, stakeMax:10,  clubId: "208 944", referral: "4590-9906", fee: "7%", feeBB: "2.5bb",
-    feeRows: null, feeNote: null },
-  { name: "Calling Koalas",   formats: ["NLH","PLO4"],               formatLabel: "NLH & PLO4",            stakeMin:1,   stakeMax:1,   clubId: "145 332", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
-  { name: "Trap City",        formats: ["NLH","PLO4","PLO5","Squid"], formatLabel: "NLH, PLO4, PLO5 & Squid", stakeMin:1,   stakeMax:1,   union:"APT", clubId: "994 793", referral: "4590-9906", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
-  { name: "Mississippians",   formats: ["PLO4","PLO5"],               formatLabel: "PLO4 & PLO5",           stakeMin:1,   stakeMax:1,   clubId: "693 951", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
+  
+  
+  { name: "Trap City",        formats: ["NLH","PLO4","PLO5","Squid"], formatLabel: "NLH, PLO4, PLO5 & Squid", stakeMin:1,   stakeMax:1,   union:"APT", clubId: "994 793", referral: "4590-9906", fee: "6%", feeBB: null,
+    feeRows: [
+      { label: "NLH (6%)", entries: ["0.1/0.2: 7BB / $1.40","0.25/0.5: 6BB / $3","0.5/1: 5BB / $5","1/2: 4BB / $8","2/4: 3BB / $12"] },
+      { label: "PLO (6%)", entries: ["0.1/0.2: 6BB / $1.20","0.25/0.5: 5BB / $2.50","0.5/1: 4BB / $4","1/2: 3BB / $6","2/4: 2BB / $8"] }
+    ], feeNote: null },
+  
   { name: "OTPokah",          formats: ["NLH","PLO4"],               formatLabel: "NLH & PLO4",            stakeMin:1,   stakeMax:2,   clubId: "237 914", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
   { name: "OTDriver",         formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:0.3, stakeMax:5,   union:"BackTees", clubId: "487 159", referral: "2822-1983", fee: "5–7%", feeBB: null,
     feeRows: [
@@ -430,15 +430,23 @@ const clubs = [
       { label: "NLH & PLO4/5/6 (5%)", entries: ["1/2: 6.5BB","2.5/5: 5BB","5/10: 4BB","10/20: 3BB","25/50: 2BB","50/100: 1.5BB"] },
       { label: "Heads-Up NLH & PLO4/5/6 (5%, 4% at 25/50+)", entries: ["1/2: 5.5BB","2.5/5: 4BB","5/10: 3BB","10/20: 2BB","25/50: 1.5BB","50/100: 1BB"] }
     ], feeNote: "Calltime: 15 min (1/2–10/20), 20 min (25/50), 30 min (50/100). HU calltime: 15 min (1/2–10/20), 20 min (25/50+). Buy-In: 50–150BB | MTT reg fee: 7–9%" },
-  { name: "ITSASHOWTIME",     formats: ["NLH","Squid"],              formatLabel: "NLH & Squid",           stakeMin:2,   stakeMax:2,   clubId: "997 417", referral: "4590-9906", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
+  
   { name: "Rafler",           formats: ["NLH","PLO4"],               formatLabel: "NLH & PLO4",            stakeMin:1,   stakeMax:2.5, clubId: "233 695", referral: "4590-9906", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
   { name: "AllinFishTank",    formats: ["NLH","Squid"],              formatLabel: "NLH & Squid",           stakeMin:2.5, stakeMax:10,  clubId: "758 066", referral: "4590-9906", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
+  { name: "Aces and Apples",  formats: ["PLO5","Squid"],             formatLabel: "PLO5 & Squid",          stakeMin:5,   stakeMax:10,  clubId: "829 412", referral: "2822-1983", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
+  { name: "Bombapots",        formats: ["PLO4"],                     formatLabel: "PLO4",                  stakeMin:1,   stakeMax:2.5, clubId: "371 117", referral: null,        fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
+  { name: "OFB Afterdark",    formats: ["NLH","PLO4","PLO5"],        formatLabel: "NLH, PLO4 & PLO5",      stakeMin:0.25,stakeMax:15,  union:"GoodBeats", clubId: "589 942", referral: "4590-9906", fee: "6%", feeBB: null,
+    feeRows: [
+      { label: "NLH / PLO4/5/6 (6%)", entries: ["0.25/0.50: 6BB cap","0.50/1: 5BB cap","1/2: 4BB cap","2/4: 3.5BB cap","2.5/5: 3.5BB cap","5/10: 3.5BB cap","10/20: 2.5BB cap","15/30: 2BB cap"] }
+    ], feeNote: null },
+  { name: "PadelCasa",        formats: ["NLH","PLO5"],               formatLabel: "NLH & PLO5",            stakeMin:0.3, stakeMax:1,   union:"Orion", clubId: "418 506", referral: null,        fee: "5%", feeBB: "5BB", feeRows: null, feeNote: null },
+  { name: "Swiss Poker CHF",  formats: ["PLO5"],                     formatLabel: "PLO5",                  stakeMin:3,   stakeMax:6,   clubId: "500 243", referral: "4590-9906", fee: "TBD", feeBB: null, feeRows: null, feeNote: null },
   { name: "CakeMe",           formats: ["PLO4","PLO5"],              formatLabel: "PLO4 & PLO5",           stakeMin:50,  stakeMax:100, clubId: null, referral: null, fee: "TBD", feeBB: null,    feeNote: "Ask for invite" },
 ];
 
 // ── UNION CONFIG ──
-const unionColors = {'Massiv':'#4466cc','Turkish':'#c07000','TMT':'#cc3333','24 Poker':'#2d7a4e','BackTees':'#7c3aed','Atamans':'#1a7a9a','APT':'#cc6622'};
-const unionOrder = ['Massiv','Turkish','TMT','24 Poker','BackTees','Atamans','APT'];
+const unionColors = {'Massiv':'#4466cc','Turkish':'#c07000','TMT':'#cc3333','24 Poker':'#2d7a4e','BackTees':'#7c3aed','Atamans':'#1a7a9a','APT':'#cc6622','GoodBeats':'#2d8a6e','Orion':'#886622'};
+const unionOrder = ['Massiv','Turkish','TMT','24 Poker','BackTees','Atamans','APT','GoodBeats','Orion'];
 
 // ── HELPERS ──
 function stakeRangeLabel(min,max){
@@ -536,11 +544,9 @@ function buildCard(club,idx){
 // Sort non-union clubs by stakeMin ascending, then name
 const sortedNonUnion=[...clubs].filter(c=>!c.union).sort((a,b)=>a.stakeMin-b.stakeMin||a.name.localeCompare(b.name));
 const stakeBuckets=[
-  {label:'Low — 0.25/0.50 to 1/2',     test:c=>c.stakeMax<=1.5},
-  {label:'Low–Mid — 0.25/0.50 to 5/10',test:c=>c.stakeMin<2&&c.stakeMax>1.5},
-  {label:'Mid — 2/4 to 10/20',          test:c=>c.stakeMin>=2&&c.stakeMax<=12},
-  {label:'Mid–High — 2/4 to 25/50',     test:c=>c.stakeMin>=2&&c.stakeMax>12&&c.stakeMin<15},
-  {label:'High — 15/30 and above',      test:c=>c.stakeMin>=15},
+  {label:'Low — 0.25/0.50 to 1/2',  test:c=>c.stakeMax<=1.5&&c.stakeMin<1},
+  {label:'Mid — 1/2 to 10/20',       test:c=>!(c.stakeMax<=1.5&&c.stakeMin<1)&&c.stakeMin<15&&c.stakeMax<=20},
+  {label:'High — 15/30 and above',   test:c=>c.stakeMin>=15||c.stakeMax>20},
 ];
 
 const grid=document.getElementById('grid');
